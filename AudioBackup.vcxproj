@@ -11,8 +11,8 @@
     </ProjectConfiguration>
   </ItemGroup>
   <ItemGroup>
-    <ClCompile Include="searchPhase.cpp" />
     <ClCompile Include="src\main.cpp" />
+    <ClCompile Include="src\searchPhase.cpp" />
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="include\searchPhase.h" />

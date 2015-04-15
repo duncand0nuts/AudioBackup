@@ -1,15 +1,29 @@
+//
+//  SearchPhase.h
+//  AudioBackup
+//
+//  Created by Angus Maidment on 15/04/15.
+//  Copyright (c) 2015 Angus Maidment. All rights reserved.
+//
+
 /*
-The searchPhase class performs a recursive traversal of the target directory
+The SearchPhase class performs a recursive traversal of the target directory
 */
 
-#ifndef __searchPhase__
-#define __searchPhase__
+#include <filesystem>
+#include <iostream>
 
-class searchPhase
+
+#ifndef __SearchPhase_H__
+#define __SearchPhase_H__
+
+class SearchPhase
 {
 public:
-	searchPhase();  // constructor
-	~searchPhase();  // destructor
+	SearchPhase();  // constructor
+	~SearchPhase();  // destructor
+
+	void RecursiveFileTraverse(std::string input_path);
 private:
 };
 
