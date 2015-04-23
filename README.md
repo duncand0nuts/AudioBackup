@@ -16,7 +16,7 @@ and want to keep their precious music collection intact.
 
 The proposed design starts with a recursive directory traversal from the root of a target disk.  
 The relevant files will be identified by extension, and their paths will be added to a queue.  A thread will fetch
-paths from the queue and copy them to a specified backup location.  
+paths from the queue and copy the files to a specified backup location.  
 
 # Implementation
 
