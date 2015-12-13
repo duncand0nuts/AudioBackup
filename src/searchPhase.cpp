@@ -24,12 +24,15 @@ SearchPhase::~SearchPhase()
 void SearchPhase::RecursiveFileTraverse(std::string input_path)
 {
 	std::tr2::sys::path initial_path = input_path;
+	//std::tr2::sys::path current_path;
 
 	std::tr2::sys::recursive_directory_iterator recursive_dir_iterator(initial_path);
-	std::tr2::sys::recursive_directory_iterator end; //rename plx
+	std::tr2::sys::recursive_directory_iterator iterator_end; 
 
-	for (; recursive_dir_iterator != end; recursive_dir_iterator++)
+	for (; recursive_dir_iterator != iterator_end; recursive_dir_iterator++)
 	{
+		//current_path = recursive_dir_iterator;
+		//SearchPhase::RecursiveFileTraverse();
 		std::cout << recursive_dir_iterator->path() << "\n";
 	}
 
